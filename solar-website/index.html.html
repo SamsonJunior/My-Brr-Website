@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaius Solar Engineering</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background: #222;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      nav {
+        background: #f4a300;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        background: #222;
+      }
+
+      .hero {
+        background: url("") center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 5px #000;
+      }
+
+      section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      h2 {
+        color: #f4a300;
+        margin-bottom: 20px;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .service {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+      .service img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .about img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      form button {
+        background: #f4a300;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background: #222;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="logo.jpg.jpg"
+          alt="Solar Logo"
+        />
+        <h1>Gaius Solar Engineering</h1>
+      </div>
+      <p>Powering Nigeria with Renewable Energy</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <h1>Reliable Solar Energy Solutions</h1>
+      <p>We bring light and power to homes, businesses, and industries.</p>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <img src="background-img.jpg.jpg" alt="Engineer" />
+      <p>
+        Founded by <b>Engr. Julius Gaius</b>, a certified Solar Engineer based
+        in Abuja, we are dedicated to designing and installing solar systems
+        that reduce electricity costs and improve lives.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <img src="installation.jpg.jpg" alt="Solar Install" />
+          <h3>Solar Panel Installation</h3>
+          <p>High-quality solar panels for homes, schools, and businesses.</p>
+        </div>
+        <div class="service">
+          <img src="inverter.jpg.jpg" alt="Inverter" />
+          <h3>Inverter Systems</h3>
+          <p>
+            Reliable inverters that ensure steady power supply even during
+            outages.
+          </p>
+        </div>
+        <div class="service">
+          <img src="maintenace.jpg.jpg" alt="Maintenance" />
+          <h3>Maintenance & Repairs</h3>
+          <p>We provide regular maintenance and quick repair services.</p>
+        </div>
+        <div class="service">
+          <img src="jp.jpj.jpg"
+          alt="Sample" />
+          <h3>Let sun pay your bill</h3>
+          <p>We provide you with quality work.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Gaius Solar Engineering. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
